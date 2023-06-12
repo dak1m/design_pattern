@@ -19,7 +19,7 @@ type IGun interface {
 	getPower() int
 }
 
-// 具体产品的公共部分
+// 具体产品的父类
 type Gun struct {
 	name  string
 	power int
