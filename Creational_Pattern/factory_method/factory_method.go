@@ -11,7 +11,7 @@ import (
 2. 产品具有相同的接口，子类才能返回不同产品
 */
 
-// 产品接口
+// IGun 产品接口
 type IGun interface {
 	setName(name string)
 	setPower(power int)
@@ -19,7 +19,7 @@ type IGun interface {
 	getPower() int
 }
 
-// 具体产品的父类
+// Gun 具体产品的父类
 type Gun struct {
 	name  string
 	power int
@@ -41,7 +41,7 @@ func (g *Gun) getPower() int {
 	return g.power
 }
 
-// 具体产品
+// AK47 具体产品
 type AK47 struct {
 	Gun
 }
